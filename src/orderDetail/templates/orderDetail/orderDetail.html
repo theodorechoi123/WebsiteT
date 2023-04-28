@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="orders">
+    {{orderDetail}}
+    <div>
+		<table class="content-table">
+			<thead>
+				<tr>
+					<th>Order Detail ID</th>
+					<th>Item</th>
+					<th>Price</th>
+					<th>Comment</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in orderDetail %}
+				<tr>
+					<td>{{ i.orderDetailID }}</td>
+					<td>{{ i.item }}</td>
+					<td>{{ i.price }}</td>
+					<td>{{ i.comment }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+{% endblock content %}

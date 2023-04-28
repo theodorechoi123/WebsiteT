@@ -1,0 +1,401 @@
+.header {
+	padding: 30px;
+	background: lightseagreen;
+	color: white;
+	font-size: 20px;
+}
+
+#company_name {
+	color: white;
+}
+
+#company_name:hover {
+	color: gray;
+}
+
+.orders {
+	height: 500px;
+}
+
+.content-table {
+	border-collapse: collapse;
+	color: black;
+	margin: 25px;
+	font-size: 20px;
+	min-width: 1000px;
+}
+
+.content-table thead tr {
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+}
+
+.content-table th,
+.content-table td {
+	padding: 12px;
+}
+
+.content-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+	border-bottom: 2px solid #009879;
+}
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.button-body {
+	width: 100%;
+	text-align: center;
+}
+
+.button-eco {
+	margin: 30px;
+	padding: 20px;
+	width: 500px;
+	height: 100px;
+	background-color: #D2B48C;
+	color: black;
+	border: none;
+	border-radius: 50em;
+	font-weight: bold;
+	box-shadow: inset 0 0 0 0 #232127;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.button-eco:hover {
+	box-shadow: inset 500px 0 0 0 #232127;
+	cursor: pointer;
+	color: white;
+}
+
+.button-repair {
+	margin: 30px;
+	padding: 20px;
+	width: 500px;
+	height: 100px;
+	background-color: #D2B48C;
+	color: black;
+	border: none;
+	border-radius: 50em;
+	font-weight: bold;
+	box-shadow: inset 0 0 0 0 #232127;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.button-repair:hover {
+	box-shadow: inset 500px 0 0 0 #232127;
+	cursor: pointer;
+	color: white;
+}
+
+.button-same {
+	margin: 30px;
+	padding: 20px;
+	width: 500px;
+	height: 100px;
+	background-color: #D2B48C;
+	color: black;
+	border: none;
+	border-radius: 50em;
+	font-weight: bold;
+	box-shadow: inset 0 0 0 0 #232127;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.button-same:hover {
+	box-shadow: inset 500px 0 0 0 #232127;
+	cursor: pointer;
+	color: white;
+}
+
+.button-prices {
+	margin: 30px;
+	padding: 20px;
+	width: 500px;
+	height: 100px;
+	background-color: #D2B48C;
+	color: black;
+	border: none;
+	border-radius: 50em;
+	font-weight: bold;
+	box-shadow: inset 0 0 0 0 #232127;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	outline: none;
+}
+
+.button-prices:hover {
+	box-shadow: inset 500px 0 0 0 #232127;
+	cursor: pointer;
+	color: white;
+}
+
+#about {
+	height: 300px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 50px;
+	background-color: #D2B48C;
+	position: relative;
+}
+
+#about::before {
+	background-image: url("https://cdn.discordapp.com/attachments/795784936463794199/1100108452665233478/Attachment.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.3;
+}
+
+#about-title {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+#about-para {
+	font-weight: bold;
+	position: relative;
+	color: black;
+	font-size: 23px;
+}
+
+#eco {
+	height: 300px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 50px;
+	background-color: #D2B48C;
+	position: relative;
+}
+
+#eco::before {
+	background-image: url("https://cdn.discordapp.com/attachments/795784936463794199/1100108452665233478/Attachment.jpg");
+	background-size: cover;
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.3;
+}
+
+#eco-title {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+#eco-para {
+	font-weight: bold;
+	position: relative;
+	color: black;
+	font-size: 20px;
+}
+
+#repair {
+	height: 300px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 50px;
+	background-color: #D2B48C;
+	position: relative;
+}
+
+#repair-title {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+#repair::before {
+	background-image: url("https://cdn.discordapp.com/attachments/795784936463794199/1100108452665233478/Attachment.jpg");
+	background-size: cover;
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.3;
+}
+
+#repair-para {
+	font-weight: bold;
+	position: relative;
+	color: black;
+	font-size: 20px;
+}
+
+#sameday {
+	height: 300px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 50px;
+	background-color: #D2B48C;
+	position: relative;
+}
+
+#sameday::before {
+	background-image: url("https://cdn.discordapp.com/attachments/795784936463794199/1100108452665233478/Attachment.jpg");
+	background-size: cover;
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.3;
+}
+
+#sameday-title {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+#sameday-para {
+	font-weight: bold;
+	position: relative;
+	color: black;
+	font-size: 20px;
+}
+
+#prices {
+	height: 400px;
+	font-size: 30px;
+	margin: 10px;
+	padding: 50px;
+	background-color: #D2B48C;
+	position: relative;
+}
+
+#prices::before {
+	background-image: url("https://cdn.discordapp.com/attachments/795784936463794199/1100108452665233478/Attachment.jpg");
+	background-size: cover;
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.3;
+}
+
+#prices-title {
+	position: relative;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+#prices-para {
+	font-weight: bold;
+	position: relative;
+	color: black;
+	font-size: 20px;
+}
+
+.links {
+	float: right;
+}
+
+.username_greeting {
+	text-align: end;
+	color: white;
+}
+
+#small_buttons {
+	text-align: end;
+	margin: 0px;
+	padding: 20px;
+	width: 500px;
+	height: 100px;
+	background-color: #20B2AA;
+	color: white;
+	border: none;
+}
+
+
+
+#small_buttons:hover {
+	cursor: pointer;
+	color: gray;
+}
+
+.login {
+	padding: 30px;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#login {
+	text-align: center;
+}
+
+.body {
+	margin: 0px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#button-section {
+	background-image:url("https://cdn.discordapp.com/attachments/795784936463794199/1100101724598980678/Attachment.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 90px;
+}
+
+.footer {
+	padding: 30px;
+	background-color: #20B2AA;
+	color: black;
+	scroll-behavior: smooth;
+}
+
+#contact-title {
+	font-weight: bold;
+	text-align: center;
+}
+
+#contact-para {
+	text-align: left;
+	margin: 20px;
+}
+

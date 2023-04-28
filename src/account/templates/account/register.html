@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="body">
+	<h2 id="login">Register</h2>
+	<div class="login">
+		<form method="post">{% csrf_token %} <!-- Register token for security for Django -->
+			{% for field in registration_form %}
+				<p>
+					{{field.label_tag}}
+					{{field}}
+
+					{% if field.help_text %}
+						<small style="color: grey;">
+							{{field.help_text}}
+						</small>
+					{% endif %}
+
+					{% for error in field.errors %}
+						<p style="color: red;">{{error}}</p>
+					{% endfor %}
+				</p>
+			{% endfor %}
+			<button type="submit">
+				Register
+			</button>
+		</form>
+	</div>
+	</div>
+
+
+{% endblock content %}

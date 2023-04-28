@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="orders">
+	{{order}}
+	<div>
+		<table class="content-table">
+			<thead>
+				<tr>
+					<th>Order ID</th>
+					<th>Email</th>
+					<th>Issued Date</th>
+					<th>Due Date</th>
+					<th>Same Day?</th>
+					<th>Delivery?</th>
+					<th>Ready?</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in order %}
+				<tr>
+					<td><a href="{% url 'orderDetail' i.orderID %}">{{ i.orderID }}</a></td>
+					<td>{{ i.email }}</td>
+					<td>{{ i.issuedDate }}</td>
+					<td>{{ i.dueDate }}</td>
+					<td>{{ i.isSameDay }}</td>
+					<td>{{ i.isDelivery }}</td>
+					<td>{{ i.isReady }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock content %}

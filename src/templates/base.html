@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type= "text/css" href="{% static 'css/style.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<title>Quality Dry Cleaners</title>
+	<div class="header">
+		<nav>
+			<h1><a id="company_name" href="{% url 'home' %}">Quality Dry Cleaners</a></h1>
+			<div class="links">
+				{% if request.user.is_authenticated %}
+					<p class="username_greeting">Hello, {{request.user.username}}</p> <br>
+					<p><a id="small_buttons" href="{% url 'order' %}">Orders</a> | <a id="small_buttons" href="{% url 'home' %}#about">About</a> | <a id="small_buttons" href="#contact">Contact</a> | <a id="small_buttons" href="{% url 'logout' %}">Logout</a></p>
+					
+				{% else %}
+					<p><a id="small_buttons" href="{% url 'home' %}#about">About</a> | <a id="small_buttons" href="#contact">Contact</a> | <a id="small_buttons" href="{% url 'register' %}">Register</a> | <a id="small_buttons" href="{% url 'login' %}">Login</a></p>
+				{% endif %}
+			</div>
+		</nav>
+	</div>
+
+</head>
+
+<body>
+	{% block content %}
+
+	{% endblock content %}
+</body>
+
+<footer>
+	<div class="footer">
+		<div id="contact">
+			<h3 id="contact-title">
+				CONTACT INFO
+			</h3>
+			<p id="contact-para">
+				<b>Phone: </b>413 - 783 - 0987<br>
+				<b>Email: </b>jevillage@gmail.com<br>
+				<b>Address: </b>1205 Sumner Ave. Springfield, MA 01118<br>
+				<b>Hours: </b><br>
+				<b>Mon - Fri: 7AM to 7PM<br>
+				Sat: 7AM to 3PM<br>
+				Sun: Closed</b>
+			</p>
+		</div>
+	</div>
+</footer>
+
+</html>
