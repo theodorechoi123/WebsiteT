@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-pkfmhp)pt!*u!1%3_sld=e8_x%^@4t$bc^18#6osr!$s+lxnwc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ec2-54-209-74-9.compute-1.amazonaws.com']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
@@ -80,7 +80,7 @@ TEMPLATES = [
 #and telling Django where the custom user model is. 
 AUTH_USER_MODEL = 'account.Account'
 
-WSGI_APPLICATION = 'WebsiteT.wsgi.application'
+WSGI_APPLICATION = 'mySite.wsgi.application'
 
 
 # Database
