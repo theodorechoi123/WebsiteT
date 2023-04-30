@@ -135,6 +135,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     "/home/ubuntu/WebsiteT/src/static",
+    "/src/static",
 ]
 
 # Default primary key field type
