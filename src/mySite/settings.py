@@ -80,7 +80,7 @@ TEMPLATES = [
 #and telling Django where the custom user model is. 
 AUTH_USER_MODEL = 'account.Account'
 
-WSGI_APPLICATION = 'mySite.wsgi.application'
+WSGI_APPLICATION = 'WebsiteT.wsgi.application'
 
 
 # Database
