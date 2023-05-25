@@ -5,3 +5,16 @@ cd /etc/supervisor/conf.d/ //this is where your conf.d file is
 sudo supervisorctl reread
 sudo supervisorctl update
 sudo supervisorctl status //the status should say RUNNING, nothing else. 
+
+//gunicorn.conf file
+[program:gunicorn]
+ directory = /home/ubuntu/<path to manage.py>
+ command = /home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/<App Directory>/app.sock <App Name>.wsgi:application
+ autostart = true
+ autorestart = true
+ stderr_logfile = /var/log/gunicorn/gunicorn.err.log
+ stdout_logfile = /var/log/gunicorn/gunicorn.out.log
+
+ [group:guni]
+ programs:gunicorn
+
