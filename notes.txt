@@ -18,3 +18,12 @@ sudo supervisorctl status //the status should say RUNNING, nothing else.
  [group:guni]
  programs:gunicorn
 
+cd etc/nginx //this is where you need to go for nginx conf file
+sudo nano nginx.conf
+
+cd etc/nginx/sites-available //this is where your django.conf file is
+
+sudo ln django.conf /etc/nginx/sites-enabled //this is how you start your django web application by enabling it. 
+
+sudo service nginx restart //this is how to restart nginx
+
