@@ -1,1 +1,2 @@
 source env/bin/activate // this activates your venv
+cd /etc/supervisor/conf.d/ //this is where your conf.d file is
