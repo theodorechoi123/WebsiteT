@@ -1,2 +1,7 @@
 source env/bin/activate // this activates your venv
 cd /etc/supervisor/conf.d/ //this is where your conf.d file is
+
+//saving changes to gunicorn.conf
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl status //the status should say RUNNING, nothing else. 
